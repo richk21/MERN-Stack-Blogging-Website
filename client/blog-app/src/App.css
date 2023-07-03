@@ -1,6 +1,6 @@
 main{
   padding: 10px;
-  max-width: 700px;
+  max-width: 90%;
   margin: 0 auto;
 }
 
@@ -44,7 +44,6 @@ header nav{
   padding-left: 5px;
   padding-right: 5px;
   padding-bottom: 0;
-  align-items: center;
 }
 .post .image{
   padding: 0;
@@ -52,9 +51,11 @@ header nav{
 .post .postTexts h3{
   margin: 0px;
   font-size: 1.3rem;
+  color:#eeeeee;
 }
 .post .postTexts .postPara{
-  color: #6c6b6b;
+  color: #dbdbdb;
+  font-size: 0.8rem;
 }
 .post .postTexts .postsubheader{
   font-size: 0.7rem;
@@ -64,5 +65,10 @@ header nav{
   gap: 10px;
 }
 .post .postTexts .postsubheader .author{
-  color: #555;
+  color: #e4e4e4;
+}
+
+.post .postTexts a{
+  text-decoration: none;
+  color: inherit;
 }

@@ -1,19 +1,25 @@
-export default function Post(){
+import {format} from "date-fns";
+import { Link } from "react-router-dom";
+
+export default function Post({_id, title, summary, cover, content, createdAt, author}){
     return(
         <div className="post">
             <div className="image">
-            <img src='https://www.politico.eu/cdn-cgi/image/width=1280,quality=80,onerror=redirect,format=auto/wp-content/uploads/2023/06/28/Live-Blog-EUCO-scaled.jpg' alt="blogimage"/>
+                <Link to={`/post/${_id}`}>
+                    <img src={"http://localhost:4000/"+cover} style={{borderRadius:'20px'}} alt="cover image"/>
+                </Link>
             </div>
             <div className="postTexts">
-            <h3>Sample heading</h3>
+            <Link to={`/post/${_id}`}>
+            <h3>{title}</h3>
             <p className="postsubheader">
-              <a className='author'>Richa Kiran</a>
-              <time>01-07-2023 09:09</time>
+              <a className='author'>{author.username}</a>
+              <time>{format(new Date(createdAt), 'MMM d, yyyy')}</time>
             </p>
-            <p className='postPara'>This is a sample text for this post! I hope you enjoy reading this.
-            This is a sample text for this post! I hope you enjoy reading this.
-            This is a sample text for this post! I hope you enjoy reading this.
+            <p className='postPara'>
+                {summary}
             </p>
+            </Link>
             </div>
         </div>
     )

@@ -1,0 +1,89 @@
+.custom-input {
+    font-family: 'Poppins', sans-serif;
+    padding: 10px;
+    border-radius: 0;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #bdbdbd;
+    font-size: inherit;
+    font-weight: inherit;
+    width: 100%;
+    transition: border-color 0.3s ease-in-out;
+    margin-bottom: inherit;
+  }
+  
+  .custom-input:focus{
+    border-bottom-color: #000;
+  }
+  .custom-input:hover {
+    border-bottom-color: #2b2a2a;
+  }
+
+
+  /* cover image */
+  .file-input-container {
+    width: 100%;
+    height: 200px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #282828;
+    margin-bottom: 50px;
+  }
+  
+  .file-input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+  }
+  
+  
+  .file-input-text {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #ffffff;
+    margin-top: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);    
+  }
+  .file-input-container.with-image {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  /*post button*/
+  .postbtn{
+    min-width: 100px;
+    width: 10%;
+    display: block;
+    color:#fff;
+    font-family: 'Poppins', sans-serif;
+    background-color: #444;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+.postbtn:hover{
+  background-color: #8e8e8e;
+}
+
+/*react quill area*/
+.custom-react-quill .ql-editor {
+    height: 200px;
+    font: 'Poppins', sans-serif;
+    font-size: 1rem;
+  }
+  
+  
+
+  

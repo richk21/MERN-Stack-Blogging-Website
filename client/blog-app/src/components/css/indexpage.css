@@ -1,0 +1,52 @@
+  .indexPage {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .searchBar {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+
+  .postContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-auto-rows: minmax(200px, auto);
+    grid-gap: 10px;
+  } 
+  .post {
+    display: flex;
+    flex-direction: column;
+    background-color: #242222;
+    border-radius: 20px;
+    padding: 20px;
+    min-height: 100px;
+  }
+  
+  .post .image img {
+    border-radius: 20px;
+    width: 100%;
+    object-fit: cover;
+    height: 200px;
+  }
+  
+  .post h3 {
+    margin-bottom: 10px;
+  }
+  
+  .post .postsubheader {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #777;
+  }
+  
+  .post .postsubheader .author {
+    margin-right: 5px;
+  }
+  
+  .post .postPara {
+    margin-top: 10px;
+  }
+  
